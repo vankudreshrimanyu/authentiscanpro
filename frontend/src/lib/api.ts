@@ -1,4 +1,4 @@
-const API_BASE = import.meta.env.VITE_API_URL || "https://authentiscanpro.onrender.com";
+const API_BASE = "https://authentiscanpro.onrender.com";
 
 export interface StatusResponse {
   status: string;
