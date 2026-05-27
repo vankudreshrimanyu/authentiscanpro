@@ -9,13 +9,21 @@ import cv2
 import numpy as np
 import tempfile
 import os
+import gdown
+
 from pathlib import Path
 
 app = Flask(__name__)
 CORS(app)
 
 # ---------- CONFIG ----------
-MODEL_PATH = "model.pth"
+MODEL_PATH = "model_best.pth"
+
+if not os.path.exists(MODEL_PATH):
+    print("⬇️ Downloading model from Google Drive...")
+    url = "https://drive.google.com/uc?id=1DR7EPcwWrZkQpJufAEoM6K0wChOuA8_T"
+    gdown.download(url, MODEL_PATH, quiet=False)
+
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 CLASS_NAMES = ["fake", "real"]   # adjust if needed
 NUM_FRAMES_PER_VIDEO = 10        # number of frames to sample
