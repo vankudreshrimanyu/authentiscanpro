@@ -1,0 +1,26 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# Build
+dist/
+build/
+
+# Environment
+.env
+
+# Large Files
+*.pth
+*.pt
+*.h5
+*.mp4
+*.avi
+*.mov
+
+# VS Code
+.vscode/
