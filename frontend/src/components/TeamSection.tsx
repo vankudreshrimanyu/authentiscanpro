@@ -2,21 +2,22 @@
 // Create a new file: src/components/TeamSection.tsx (or paste inside App.tsx if you prefer)
 
 import React from 'react';
+import shriImg from "@/assets/team/shri.png";
+import sujayImg from "@/assets/team/sujay.jpeg";
 
 const teamMembers = [
   {
     id: 1,
     name: "Shrimanyu Vankudre",
     role: " Lead Developer & Data Analyst",
-    image: "import shriImg from3
-     "@/assets/team/shri.png";
+    image: shriImg,
     gradient: "from-cyan-400 to-blue-500",
   },
   {
     id: 2,
     name: "Sujay Vanjari",
     role: "Backend Developer",
-    image: "import sujayImg from "@/assets/team/sujay.jpeg";
+    image: sujayImg,
     gradient: "from-purple-400 to-pink-500",
   },
   {
