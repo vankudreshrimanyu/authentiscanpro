@@ -1,5 +1,3 @@
-const API_BASE = "https://shrimanyu-authentiscanpro.hf.space";
-
 export interface StatusResponse {
   status: string;
   message: string;
@@ -14,7 +12,9 @@ export interface PredictionResponse {
 }
 
 export async function getStatus(): Promise<StatusResponse> {
-  const res = await fetch(`${API_BASE}/`);
+  const res = await fetch(
+    "https://shrimanyu-authentiscanpro.hf.space/"
+  );
 
   if (!res.ok) {
     throw new Error(`Status check failed: ${res.status}`);
@@ -30,10 +30,13 @@ export async function processImage(
   const formData = new FormData();
   formData.append("file", file);
 
-  const res = await fetch(`${API_BASE}/predict`, {
-    method: "POST",
-    body: formData,
-  });
+  const res = await fetch(
+    "https://shrimanyu-authentiscanpro.hf.space/predict",
+    {
+      method: "POST",
+      body: formData,
+    }
+  );
 
   if (!res.ok) {
     const err = await res.json().catch(() => ({}));
