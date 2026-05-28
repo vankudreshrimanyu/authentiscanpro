@@ -8,14 +8,15 @@ const teamMembers = [
     id: 1,
     name: "Shrimanyu Vankudre",
     role: " Lead Developer & Data Analyst",
-    image: "https://drive.google.com/uc?export=view&id=1_vnXQEMBETeKSkzz8EaDqCChRbH08WNt",
+    image: "import shriImg from3
+     "@/assets/team/shri.png";
     gradient: "from-cyan-400 to-blue-500",
   },
   {
     id: 2,
     name: "Sujay Vanjari",
     role: "Backend Developer",
-    image: "https://drive.google.com/uc?export=view&id=1HXQNCXCjK80MULl6ivXs4JPWKgYDkyIS",
+    image: "import sujayImg from "@/assets/team/sujay.jpeg";
     gradient: "from-purple-400 to-pink-500",
   },
   {
