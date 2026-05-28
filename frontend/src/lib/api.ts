@@ -31,12 +31,16 @@ export async function processImage(
   formData.append("file", file);
 
   const res = await fetch(
-    "https://shrimanyu-authentiscanpro.hf.space/predict",
-    {
-      method: "POST",
-      body: formData,
-    }
-  );
+  "https://shrimanyu-authentiscanpro.hf.space/predict",
+  {
+    method: "POST",
+    mode: "cors",
+    body: formData,
+    headers: {
+      Accept: "application/json",
+    },
+  }
+);
 
   if (!res.ok) {
     const err = await res.json().catch(() => ({}));
