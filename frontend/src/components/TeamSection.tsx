@@ -7,15 +7,15 @@ const teamMembers = [
   {
     id: 1,
     name: "Shrimanyu Vankudre",
-    role: " Lead Developer & Data Scientist",
-    image: "https://cdn.discordapp.com/attachments/748807092143390731/1488257432227414166/WhatsApp_Image_2025-09-17_at_01.29.18_31ef0b46.jpg?ex=69e1dffe&is=69e08e7e&hm=135865c923d40bc6d7d43d5f53f90ab3bd72e742538ede4711d79b15055016a2",
+    role: " Lead Developer & Data Analyst",
+    image: "https://drive.google.com/file/d/1_vnXQEMBETeKSkzz8EaDqCChRbH08WNt/view?usp=sharing",
     gradient: "from-cyan-400 to-blue-500",
   },
   {
     id: 2,
     name: "Sujay Vanjari",
     role: "Backend Developer",
-    image: "https://picsum.photos/id/1005/400/400",
+    image: "https://drive.google.com/file/d/1HXQNCXCjK80MULl6ivXs4JPWKgYDkyIS/view?usp=sharing",
     gradient: "from-purple-400 to-pink-500",
   },
   {
@@ -28,7 +28,7 @@ const teamMembers = [
   {
     id: 4,
     name: "Yugandhar Patil",
-    role: "Frontend & UX Designer",
+    role: "UX Designer",
     image: "https://picsum.photos/id/29/400/400",
     gradient: "from-amber-400 to-orange-500",
   },
