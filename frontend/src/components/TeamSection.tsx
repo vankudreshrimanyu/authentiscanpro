@@ -8,14 +8,14 @@ const teamMembers = [
     id: 1,
     name: "Shrimanyu Vankudre",
     role: " Lead Developer & Data Analyst",
-    image: "https://drive.google.com/file/d/1_vnXQEMBETeKSkzz8EaDqCChRbH08WNt/view?usp=sharing",
+    image: "https://drive.google.com/uc?export=view&id=1_vnXQEMBETeKSkzz8EaDqCChRbH08WNt",
     gradient: "from-cyan-400 to-blue-500",
   },
   {
     id: 2,
     name: "Sujay Vanjari",
     role: "Backend Developer",
-    image: "https://drive.google.com/file/d/1HXQNCXCjK80MULl6ivXs4JPWKgYDkyIS/view?usp=sharing",
+    image: "https://drive.google.com/uc?export=view&id=1HXQNCXCjK80MULl6ivXs4JPWKgYDkyIS",
     gradient: "from-purple-400 to-pink-500",
   },
   {
