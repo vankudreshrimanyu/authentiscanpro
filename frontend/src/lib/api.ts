@@ -1,4 +1,4 @@
-const API_BASE = "https://authentiscanpro.onrender.com";
+const API_BASE = "https://shrimanyu-authentiscanpro.hf.space";
 
 export interface StatusResponse {
   status: string;
@@ -7,18 +7,26 @@ export interface StatusResponse {
 }
 
 export interface PredictionResponse {
-  prediction: string;           // "real" or "fake"
+  prediction: string;
   confidence: number;
   probabilities: Record<string, number>;
+  frames_analyzed?: number;
 }
 
 export async function getStatus(): Promise<StatusResponse> {
   const res = await fetch(`${API_BASE}/`);
-  if (!res.ok) throw new Error(`Status check failed: ${res.status}`);
+
+  if (!res.ok) {
+    throw new Error(`Status check failed: ${res.status}`);
+  }
+
   return res.json();
 }
 
-export async function processImage(file: File): Promise<PredictionResponse> {
+export async function processImage(
+  file: File
+): Promise<PredictionResponse> {
+
   const formData = new FormData();
   formData.append("file", file);
 
@@ -31,5 +39,6 @@ export async function processImage(file: File): Promise<PredictionResponse> {
     const err = await res.json().catch(() => ({}));
     throw new Error(err.error || "Prediction failed");
   }
+
   return res.json();
 }
