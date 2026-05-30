@@ -4,6 +4,7 @@
 import React from 'react';
 import shriImg from "@/assets/team/shri.png";
 import sujayImg from "@/assets/team/sujay.jpeg";
+import prathamImg from "@/assets/team/pratham.jpeg";
 
 const teamMembers = [
   {
@@ -24,7 +25,7 @@ const teamMembers = [
     id: 3,
     name: "Prathmesh ",
     role: "Backend Developer",
-    image: "https://picsum.photos/id/201/400/400",
+    image: prathamImg,
     gradient: "from-emerald-400 to-teal-500",
   },
   {
