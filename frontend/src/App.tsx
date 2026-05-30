@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { getStatus, processImage } from './lib/api';
 import TeamSection from './components/TeamSection';
 import './index.css';
@@ -287,6 +288,7 @@ export default function App() {
           </div>
         )}
       </div>
+      <Analytics />
     </div>
   );
 }
